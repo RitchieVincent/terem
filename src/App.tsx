@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const fetchPopular = async () => {
-      await fetch('http://demo3136867.mockable.io/carousel')
+      await fetch('https://demo3136867.mockable.io/carousel')
       .then(response => response.json())
       .then(data => {
         setPopularData(data.data);
@@ -28,7 +28,7 @@ function App() {
     };
 
     const fetchFeatured = async () => {
-      await fetch('http://demo3136867.mockable.io/featured')
+      await fetch('https://demo3136867.mockable.io/featured')
       .then(response => response.json())
       .then(data => setFeaturedData(data.data));
     };

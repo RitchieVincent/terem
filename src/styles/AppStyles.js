@@ -23,7 +23,54 @@ export const PanelContainer = styled.div`
 export const PopularContainer = styled.div`
   display: flex;
   margin-bottom: 60px;
-  overflow: scroll;
+
+  .carousel {
+    width: 100%;
+    position: relative;
+  }
+
+  .carousel__inner-slide {
+    width: calc(100% - 20px);
+    overflow: hidden;
+  }
+
+  .carousel__next-button,
+  .carousel__back-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    border: 0;
+    width: 60px;
+
+    &:disabled {
+      opacity: 0;
+    }
+
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .carousel__next-button {
+    right: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) -20%,
+      rgba(255, 255, 255, 1) 80%
+    );
+    opacity: 0.9;
+  }
+
+  .carousel__back-button {
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 20%,
+      rgba(0, 0, 0, 0) 120%
+    );
+    opacity: 0.9;
+  }
 `;
 
 export const FeaturedContainer = styled.div`

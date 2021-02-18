@@ -25,7 +25,7 @@ export const CardLower = styled.div`
 
 export const CardTitle = styled.h3`
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   color: ${theme.fontColourPrimary};
   margin-bottom: 5px;
 `;
